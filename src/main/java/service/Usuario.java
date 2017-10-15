@@ -2,6 +2,8 @@ package service;
 
 import java.io.Serializable;
 
+import domain.Cuenta;
+
 public class Usuario implements Serializable {
 
 	private static final long serialVersionUID = 1L;
@@ -9,6 +11,7 @@ public class Usuario implements Serializable {
 	private Long id;
 	private String nombre;
 	private String apellido;
+	private Cuenta cuenta;
 
 	public Long getId() {
 		return id;
@@ -32,6 +35,14 @@ public class Usuario implements Serializable {
 
 	public void setApellido(String apellido) {
 		this.apellido = apellido;
+	}
+
+	public Cuenta getCuenta() {
+		return cuenta;
+	}
+
+	public void setCuenta(Cuenta cuenta) {
+		this.cuenta = cuenta;
 	}
 
 }
