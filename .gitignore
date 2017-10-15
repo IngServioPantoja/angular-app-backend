@@ -1,6 +1,6 @@
 /target/
 *.class
 *.classpath
-*.settins
+*.settings
 /.project
 ../org.eclipse.wst.validation.prefs
